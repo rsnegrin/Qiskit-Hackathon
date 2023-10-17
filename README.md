@@ -3,7 +3,7 @@
 This repository houses our team's solutions for the Qiskit Fall Fest UCLA 2023. 
 
 **Team Members (MQST Students):**
-- [Roberto Negrin](www.linkedin.com/in/rsnegrin)
+- [Roberto Negrin](https://www.linkedin.com/in/rsnegrin)
 - [Saleh Naghdi](https://www.linkedin.com/in/saleh-naghdi/)
 - [Yarin Heffes](https://www.linkedin.com/in/yarinheffes/)
 
