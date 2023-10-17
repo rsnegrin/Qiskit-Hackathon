@@ -12,9 +12,9 @@ We've implemented **trotterization** to simulate elementary physical systems, in
 - Molecular Hamiltonians
 
 Basic resources:
-- [Read more here](https://www.nature.com/articles/s41467-021-25196-0)
-- [Further details here](https://vtomole.com/blog/2019/04/07/trotter)
-- [And even more here](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/chemistry/concepts/algorithms)
+- [Link 1](https://www.nature.com/articles/s41467-021-25196-0)
+- [Link 2](https://vtomole.com/blog/2019/04/07/trotter)
+- [Link 3](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/chemistry/concepts/algorithms)
 
 
 
