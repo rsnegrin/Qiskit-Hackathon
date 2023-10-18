@@ -62,4 +62,5 @@ This repository contains solutions developed by our team for the Qiskit Fall Fes
 - [Adaptive Trotterization for time-dependent Hamiltonian](https://arxiv.org/abs/2307.10327)
 - [How to perform trotterization of a time-dependent Hamiltonian simulation](https://quantumcomputing.stackexchange.com/questions/32315/how-to-perfrom-a-time-dependent-hamiltonian-simultation-using-the-trotter-suzuki)
 - [Simulating Topological Systems with Qiskit Pulse](https://medium.com/qiskit/simulating-topological-systems-with-qiskit-pulse-9afac342ab09)
+- [https://www.pnas.org/doi/10.1073/pnas.2026805118](https://www.pnas.org/doi/10.1073/pnas.2026805118)
 ---
