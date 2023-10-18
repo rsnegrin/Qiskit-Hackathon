@@ -1,6 +1,6 @@
 # Qiskit Fall Fest UCLA 2023 Solutions
 
-This repository houses our team's solutions for the Qiskit Fall Fest UCLA 2023. 
+This repository contains solutions developed by our team for the Qiskit Fall Fest UCLA 2023.
 
 **Team Members (MQST Students):**
 
@@ -9,6 +9,7 @@ This repository houses our team's solutions for the Qiskit Fall Fest UCLA 2023.
 🔹 **Yarin Heffes** - [🔗 LinkedIn](https://www.linkedin.com/in/yarinheffes/)
 
 --- 
+
 # Getting Started
 
 1. **Pick a Toy Example:**
@@ -22,7 +23,7 @@ This repository houses our team's solutions for the Qiskit Fall Fest UCLA 2023.
      - Ground state energy
    - Compare the spectrum of the trotterised operator with the true operator.
 
-# Advanced(!) Molecule Simulation
+# Advanced Molecule Simulation
 
 1. **Pick a Physical System:**
    - Choose a system exhibiting desirable properties such as:
@@ -59,6 +60,3 @@ This repository houses our team's solutions for the Qiskit Fall Fest UCLA 2023.
 - 💡 [Microsoft Quantum Development Guide on Chemistry Algorithms](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/chemistry/concepts/algorithms)
 
 ---
-
-
-
