@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 qiskit = {extras = ["nature"], version = "*"}
-install = "*"
 qiskit-aer = "*"
 qiskit-algorithms = "*"
 pyscf = "*"
@@ -15,4 +14,4 @@ qiskit-nature = "*"
 [dev-packages]
 
 [requires]
-python_version =>"3.8"
+python_version ="3.9"
