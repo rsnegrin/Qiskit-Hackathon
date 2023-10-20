@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+qiskit = {extras = ["nature"], version = "*"}
+install = "*"
+qiskit-aer = "*"
+qiskit-algorithms = "*"
+pyscf = "*"
+matplotlib = "*"
+qiskit-nature = "*"
+
+[dev-packages]
+
+[requires]
+python_version =>"3.8"
