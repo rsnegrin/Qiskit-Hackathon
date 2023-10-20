@@ -59,7 +59,6 @@ This repository contains solutions developed by our team for the Qiskit Fall Fes
 - [Nature Article on Quantum Simulations](https://www.nature.com/articles/s41467-021-25196-0)
 - [Trotterization Explained by V. Tomole](https://vtomole.com/blog/2019/04/07/trotter)
 - [Microsoft Quantum Development Guide on Chemistry Algorithms](https://learn.microsoft.com/en-us/azure/quantum/user-guide/libraries/chemistry/concepts/algorithms)
-- [Quantum Real Time Evolution using Trotterization](https://qiskit.org/ecosystem/algorithms/tutorials/13_trotterQRTE.html)
 - [Adaptive Trotterization for time-dependent Hamiltonian](https://arxiv.org/abs/2307.10327)
 - [How to perform trotterization of a time-dependent Hamiltonian simulation](https://quantumcomputing.stackexchange.com/questions/32315/how-to-perfrom-a-time-dependent-hamiltonian-simultation-using-the-trotter-suzuki)
 - [Simulating Topological Systems with Qiskit Pulse](https://medium.com/qiskit/simulating-topological-systems-with-qiskit-pulse-9afac342ab09)
