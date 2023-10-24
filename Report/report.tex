@@ -64,19 +64,19 @@ reprint,
 \title{Quantum Simulation of the $H_2$ Molecule}
 \thanks{A footnote to the article title}%
 
-\author{Roberto}
+\author{Robert Negrin}
 \affiliation{
  University of California \\
  Los Angeles, California% with \\
 }%
 
-\author{Saleh}
+\author{Saleh Naghdi}
 \affiliation{
  University of California \\
  Los Angeles, California% with \\
 }%
 
-\author{Yarin}
+\author{Yarin Heffes}
 \affiliation{
  University of California \\
  Los Angeles, California% with \\
@@ -130,155 +130,22 @@ reprint,
 
 %\tableofcontents
 
-\section{\label{sec:level1}First-level heading:\protect\\ The line
-break was forced \lowercase{via} \textbackslash\textbackslash}
+\section{\label{sec:level1}Initial Simulation and Ground State
+H2 Molecule}
 
-This sample document demonstrates proper use of REV\TeX~4.2 (and
-\LaTeXe) in mansucripts prepared for submission to APS
-journals. Further information can be found in the REV\TeX~4.2
-documentation included in the distribution or available at
-\url{http://journals.aps.org/revtex/}.
+We utilized Qiskit's `PySCFDriver`' to define the $H_2$ molecule. The electronic structure of the 
+molecule is initially described in terms of fermionic creation and annihilation operators. \newline
 
-When commands are referred to in this example file, they are always
-shown with their required arguments, using normal \TeX{} format. In
-this format, \verb+#1+, \verb+#2+, etc. stand for required
-author-supplied arguments to commands. For example, in
-\verb+\section{#1}+ the \verb+#1+ stands for the title text of the
-author's section heading, and in \verb+\title{#1}+ the \verb+#1+
-stands for the title text of the paper.
+Now, transform this fermionic Hamiltonian into a qubit (spin) Hamiltonian suitable for quantum computation.
+For our simulation we have used Jordan-Wigner Transformation which provides a direct mapping of fermions to qubits.
+Bravyi-Kitaev Transformation is another more efficient mapping especially for systems with local interactions, but its more complex in form.
 
-Line breaks in section headings at all levels can be introduced using
-\textbackslash\textbackslash. A blank input line tells \TeX\ that the
-paragraph has ended. Note that top-level section headings are
-automatically uppercased. If a specific letter or word should appear in
-lowercase instead, you must escape it using \verb+\lowercase{#1}+ as
-in the word ``via'' above.
+
 
 \subsection{\label{sec:level2}Second-level heading: Formatting}
 
-This file may be formatted in either the \texttt{preprint} or
-\texttt{reprint} style. \texttt{reprint} format mimics final journal output. 
-Either format may be used for submission purposes. \texttt{letter} sized paper should
-be used when submitting to APS journals.
 
-\subsubsection{Wide text (A level-3 head)}
-The \texttt{widetext} environment will make the text the width of the
-full page, as on page~\pageref{eq:wideeq}. (Note the use the
-\verb+\pageref{#1}+ command to refer to the page number.) 
-\paragraph{Note (Fourth-level head is run in)}
-The width-changing commands only take effect in two-column formatting. 
-There is no effect if text is in a single column.
 
-\subsection{\label{sec:citeref}Citations and References}
-A citation in text uses the command \verb+\cite{#1}+ or
-\verb+\onlinecite{#1}+ and refers to an entry in the bibliography. 
-An entry in the bibliography is a reference to another document.
-
-\subsubsection{Citations}
-Because REV\TeX\ uses the \verb+natbib+ package of Patrick Daly, 
-the entire repertoire of commands in that package are available for your document;
-see the \verb+natbib+ documentation for further details. Please note that
-REV\TeX\ requires version 8.31a or later of \verb+natbib+.
-
-\paragraph{Syntax}
-The argument of \verb+\cite+ may be a single \emph{key}, 
-or may consist of a comma-separated list of keys.
-The citation \emph{key} may contain 
-letters, numbers, the dash (-) character, or the period (.) character. 
-New with natbib 8.3 is an extension to the syntax that allows for 
-a star (*) form and two optional arguments on the citation key itself.
-The syntax of the \verb+\cite+ command is thus (informally stated)
-\begin{quotation}\flushleft\leftskip1em
-\verb+\cite+ \verb+{+ \emph{key} \verb+}+, or\\
-\verb+\cite+ \verb+{+ \emph{optarg+key} \verb+}+, or\\
-\verb+\cite+ \verb+{+ \emph{optarg+key} \verb+,+ \emph{optarg+key}\ldots \verb+}+,
-\end{quotation}\noindent
-where \emph{optarg+key} signifies 
-\begin{quotation}\flushleft\leftskip1em
-\emph{key}, or\\
-\texttt{*}\emph{key}, or\\
-\texttt{[}\emph{pre}\texttt{]}\emph{key}, or\\
-\texttt{[}\emph{pre}\texttt{]}\texttt{[}\emph{post}\texttt{]}\emph{key}, or even\\
-\texttt{*}\texttt{[}\emph{pre}\texttt{]}\texttt{[}\emph{post}\texttt{]}\emph{key}.
-\end{quotation}\noindent
-where \emph{pre} and \emph{post} is whatever text you wish to place 
-at the beginning and end, respectively, of the bibliographic reference
-(see Ref.~[\onlinecite{witten2001}] and the two under Ref.~[\onlinecite{feyn54}]).
-(Keep in mind that no automatic space or punctuation is applied.)
-It is highly recommended that you put the entire \emph{pre} or \emph{post} portion 
-within its own set of braces, for example: 
-\verb+\cite+ \verb+{+ \texttt{[} \verb+{+\emph{text}\verb+}+\texttt{]}\emph{key}\verb+}+.
-The extra set of braces will keep \LaTeX\ out of trouble if your \emph{text} contains the comma (,) character.
-
-The star (*) modifier to the \emph{key} signifies that the reference is to be 
-merged with the previous reference into a single bibliographic entry, 
-a common idiom in APS and AIP articles (see below, Ref.~[\onlinecite{epr}]). 
-When references are merged in this way, they are separated by a semicolon instead of 
-the period (full stop) that would otherwise appear.
-
-\paragraph{Eliding repeated information}
-When a reference is merged, some of its fields may be elided: for example, 
-when the author matches that of the previous reference, it is omitted. 
-If both author and journal match, both are omitted.
-If the journal matches, but the author does not, the journal is replaced by \emph{ibid.},
-as exemplified by Ref.~[\onlinecite{epr}]. 
-These rules embody common editorial practice in APS and AIP journals and will only
-be in effect if the markup features of the APS and AIP Bib\TeX\ styles is employed.
-
-\paragraph{The options of the cite command itself}
-Please note that optional arguments to the \emph{key} change the reference in the bibliography, 
-not the citation in the body of the document. 
-For the latter, use the optional arguments of the \verb+\cite+ command itself:
-\verb+\cite+ \texttt{*}\allowbreak
-\texttt{[}\emph{pre-cite}\texttt{]}\allowbreak
-\texttt{[}\emph{post-cite}\texttt{]}\allowbreak
-\verb+{+\emph{key-list}\verb+}+.
-
-\subsubsection{Example citations}
-By default, citations are numerical\cite{Beutler1994}.
-Author-year citations are used when the journal is RMP. 
-To give a textual citation, use \verb+\onlinecite{#1}+: 
-Refs.~\onlinecite{[][{, and references therein}]witten2001,Bire82}. 
-By default, the \texttt{natbib} package automatically sorts your citations into numerical order and ``compresses'' runs of three or more consecutive numerical citations.
-REV\TeX\ provides the ability to automatically change the punctuation when switching between journal styles that provide citations in square brackets and those that use a superscript style instead. This is done through the \texttt{citeautoscript} option. For instance, the journal style \texttt{prb} automatically invokes this option because \textit{Physical 
-Review B} uses superscript-style citations. The effect is to move the punctuation, which normally comes after a citation in square brackets, to its proper position before the superscript. 
-To illustrate, we cite several together 
-\cite{[See the explanation of time travel in ]feyn54,*[The classical relativistic treatment of ][ is a relative classic]epr,witten2001,Berman1983,Davies1998,Bire82}, 
-and once again in different order (Refs.~\cite{epr,feyn54,Bire82,Berman1983,witten2001,Davies1998}). 
-Note that the citations were both compressed and sorted. Futhermore, running this sample file under the \texttt{prb} option will move the punctuation to the correct place.
-
-When the \verb+prb+ class option is used, the \verb+\cite{#1}+ command
-displays the reference's number as a superscript rather than in
-square brackets. Note that the location of the \verb+\cite{#1}+
-command should be adjusted for the reference style: the superscript
-references in \verb+prb+ style must appear after punctuation;
-otherwise the reference must appear before any punctuation. This
-sample was written for the regular (non-\texttt{prb}) citation style.
-The command \verb+\onlinecite{#1}+ in the \texttt{prb} style also
-displays the reference on the baseline.
-
-\subsubsection{References}
-A reference in the bibliography is specified by a \verb+\bibitem{#1}+ command
-with the same argument as the \verb+\cite{#1}+ command.
-\verb+\bibitem{#1}+ commands may be crafted by hand or, preferably,
-generated by Bib\TeX. 
-REV\TeX~4.2 includes Bib\TeX\ style files
-\verb+apsrev4-2.bst+, \verb+apsrmp4-2.bst+ appropriate for
-\textit{Physical Review} and \textit{Reviews of Modern Physics},
-respectively.
-
-\subsubsection{Example references}
-This sample file employs the \verb+\bibliography+ command, 
-which formats the \texttt{\jobname .bbl} file
-and specifies which bibliographic databases are to be used by Bib\TeX\ 
-(one of these should be by arXiv convention \texttt{\jobname .bib}).
-Running Bib\TeX\ (via \texttt{bibtex \jobname}) 
-after the first pass of \LaTeX\ produces the file
-\texttt{\jobname .bbl} which contains the automatically formatted
-\verb+\bibitem+ commands (including extra markup information via
-\verb+\bibinfo+ and \verb+\bibfield+ commands). 
-If not using Bib\TeX, you will have to create the \verb+thebibiliography+ environment 
-and its \verb+\bibitem+ commands by hand.
 
 Numerous examples of the use of the APS bibliographic entry types appear in the bibliography of this sample document.
 You can refer to the \texttt{\jobname .bib} file, 
