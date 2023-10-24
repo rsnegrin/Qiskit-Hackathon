@@ -3,3 +3,11 @@
 
 # Ignore some intermediate python files
 __pycache__
+
+#Ignore tex file intermediate files
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.synctex.gz
+**/*.bib
