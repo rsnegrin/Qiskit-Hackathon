@@ -7,6 +7,8 @@ This repository contains solutions developed by our team for the Qiskit Fall Fes
 🔹 **Robert Negrin** - [🔗 LinkedIn](https://www.linkedin.com/in/rsnegrin)  
 🔹 **Saleh Naghdi** - [🔗 LinkedIn](https://www.linkedin.com/in/saleh-naghdi/)  
 🔹 **Yarin Heffes** - [🔗 LinkedIn](https://www.linkedin.com/in/yarinheffes/)
+🔹 **Manvi Agrawal** - [🔗 LinkedIn](https://www.linkedin.com/in/manvi-a-0a95b1171/)
+
 
 --- 
 
